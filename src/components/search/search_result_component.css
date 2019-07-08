@@ -1,0 +1,31 @@
+.search-result button {
+  text-align: start;
+  height: 20px;
+}
+
+.movie-title {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.search-result {
+  padding-bottom: 10px;
+}
+
+.search-result .search-result-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.search-result .search-result-summary .movie-title {
+  flex: 1;
+}
+
+.search-result .search-result-details {
+  transition: all 0.5s ease-in;
+  overflow-y: hidden;
+}
+
+.search-result .search-result-details.collapsed {
+  height: 0;
+}

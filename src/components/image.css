@@ -1,0 +1,16 @@
+/* General styles for when we show images. */
+.poster img {
+  background-color: #dbdbdb;
+  border-radius: 4px;
+  border: 1px solid #d7d7d7;
+}
+
+.poster img.w92 {
+  width: 92px;
+  height: 138px;
+}
+
+.poster img.w185 {
+  width: 185px;
+  height: 278px;
+}

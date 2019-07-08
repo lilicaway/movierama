@@ -1,3 +1,30 @@
+/* 
+ * Border box reset taken from
+ * https://css-tricks.com/box-sizing/#article-header-id-7
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*
+ * System Fonts as used by Medium and WordPress.
+ * Taken from https://css-tricks.com/snippets/css/system-font-stack/
+ */
 body {
-  background-color: gray;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
 }

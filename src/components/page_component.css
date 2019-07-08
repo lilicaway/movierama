@@ -1,0 +1,38 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 0 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+
+/* See how to move class styles to li */
+.menu li {
+  display: inline-block;
+  padding: 2px;
+  margin-right: 10px;
+}
+.menu li button {
+  font-size: 1.2em;
+}
+
+.menu li.selected {
+  border-bottom: 3px solid black;
+}
+
+.hidden {
+  display: none;
+}

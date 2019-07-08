@@ -1,0 +1,7 @@
+.loading-indicator {
+  font-size: 30px;
+}
+
+.loading-indicator .hidden {
+  display: none;
+}

@@ -1,0 +1,20 @@
+.search-container .search-box {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.search-container .search-box input {
+  flex: 1;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #dcd5d5;
+  border-width: 1px;
+  outline: none;
+}
+
+.search-container .search-box input:focus {
+  box-shadow: 1px 1px 8px 4px rgba(32, 33, 36, 0.28);
+}

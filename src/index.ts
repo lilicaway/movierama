@@ -1,14 +1,8 @@
+import { pageComponent } from './components/page_component';
 import './index.css';
-
-export function createHelloWorld(): Node {
-  return document.createTextNode('Hello world!');
-}
+import { Injector } from './injector';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // tslint:disable-next-line:no-console we want to show that the code run.
-  console.log('Document loaded');
-  const root: HTMLDivElement = document.createElement('div');
-  root.appendChild(createHelloWorld());
-
-  document.body.appendChild(root);
+  const injector = new Injector();
+  document.body.appendChild(pageComponent(injector));
 });
