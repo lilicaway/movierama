@@ -11,7 +11,7 @@
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "serve-dev": "webpack-dev-server --mode=development --config webpack.config.js",
     "build-webpack": "webpack --mode=production -p --config webpack.config.js",
-    "serve-prod": "npm run build-webpack && serve dist",
+    "serve-prod": "serve dist",
     "test": "jasmine-ts --config=spec/support/jasmine.json",
     "test-watch": "nodemon --ext ts --exec 'npm run test'",
     "testWithCoverage": "nyc jasmine-ts --config=spec/support/jasmine.json && nyc report",
