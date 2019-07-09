@@ -17,15 +17,19 @@ This project is build on top of the following technologies:
 
 It is based on my template [TypeScript-Babel-Webpack-Starter](https://github.com/lilicaway/TypeScript-Babel-Webpack-Starter)
 
-## How do I use it?
+## Demo
+
+A demo of this app is deployed using [Heroku](https://www.heroku.com/).
+
+You can check it at https://movierama-lilicaway.herokuapp.com/
+
+## How do I run it locally?
 
 I haven't added the `apiKey` to the repository for security reasons, instead I have set it up so the `apiKey` is received as an [environment variable using webpack](https://webpack.js.org/guides/environment-variables/).
 
 Read [here](https://developers.themoviedb.org/3/getting-started/introduction) for instructions on how to generate your own `apiKey`.
 
-### Running the App in dev and prod mode, using the ApiKey
-
-#### Serve in development mode
+### Serve in development mode
 
 This includes HMR (Hot Mode Reload).
 
@@ -34,7 +38,7 @@ TMDB_API_KEY=<yourTmdbApiKey>
 npm run serve-dev  -- --env.apiKey=${TMDB_API_KEY}
 ```
 
-#### Serve in production mode
+### Serve in production mode
 
 ```sh
 TMDB_API_KEY=<yourTmdbApiKey>
@@ -42,7 +46,7 @@ npm run build-webpack -- --env.apiKey=${TMDB_API_KEY} && \
  npm run serve-prod
 ```
 
-#### Run unit tests with Jasmine
+### Run unit tests with Jasmine
 
 ```sh
 npm run test
@@ -54,13 +58,13 @@ You can also check coverage with:
 npm run testWithCoverage
 ```
 
-#### Building the repo
+### Building the repo
 
 ```sh
 npm run build
 ```
 
-#### Type-checking the repo
+### Type-checking the repo
 
 ```sh
 npm run type-check
@@ -72,7 +76,7 @@ And to run in `--watch` mode:
 npm run type-check:watch
 ```
 
-#### Format and style fixes
+### Format and style fixes
 
 To detect and attempt to fix lint issues:
 
