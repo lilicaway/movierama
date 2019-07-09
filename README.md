@@ -42,7 +42,7 @@ npm run serve-dev  -- --env.apiKey=${TMDB_API_KEY}
 
 ```sh
 TMDB_API_KEY=<yourTmdbApiKey>
-npm run build-webpack -- --env.apiKey=${TMDB_API_KEY} && \
+npm run build:webpack -- --env.apiKey=${TMDB_API_KEY} && \
  npm run serve-prod
 ```
 
