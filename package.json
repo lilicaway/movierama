@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf dist lib build",
+    "clean": "rm -rf dist lib",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
     "build": "npm run build:types && npm run build:js",
@@ -11,7 +11,7 @@
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "serve-dev": "webpack-dev-server --mode=development --config webpack.config.js",
     "build:webpack": "webpack --mode=production -p --config webpack.config.js",
-    "serve-prod": "serve build",
+    "serve-prod": "serve dist",
     "heroku-postbuild": "npm run build:webpack -- --env.apiKey=${apiKey}",
     "start": "npm run serve-prod",
     "test": "jasmine-ts --config=spec/support/jasmine.json",

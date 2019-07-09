@@ -18,7 +18,7 @@ module.exports = env => {
     mode: 'development',
     entry: ['babel-polyfill', './src/index'],
     output: {
-      path: path.resolve(__dirname, 'build'),
+      path: path.resolve(__dirname, 'dist'),
       filename: 'app.bundle.js',
     },
     resolve: {
@@ -52,7 +52,7 @@ module.exports = env => {
       }),
     ],
     devServer: {
-      contentBase: __dirname + '/build',
+      contentBase: __dirname + '/dist',
       compress: true,
       port: 9000,
       open: true,
