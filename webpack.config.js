@@ -46,7 +46,6 @@ module.exports = env => {
       new HtmlWebpackPlugin({
         hash: true,
       }),
-      // new webpack.EnvironmentPlugin(['apiKey']),
       new webpack.DefinePlugin({
         'process.env.apiKey': JSON.stringify((env && env.apiKey) || ''),
       }),
